@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Smartbook - AudioBook</title>
+  <link rel="stylesheet" href="plyr.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="ID-0-47-Couverture.jpg" alt="Couverture" style="width: 20%; height: auto; margin-bottom: 20px;">
+
+  <div class="logos">
+    <img src="PLANCHE-1a.jpg" alt="Logo AudioBook" style="width: 5%; height: auto; margin-bottom: 20px;">
+    <img src="Logo_resized.jpg" alt="Logo Encyclo-AI" style="width: 10%; height: auto; margin-bottom: 20px;">
+  </div>
+
+<!-- Bloc bouton Play + potentiomètre vitesse -->
+<div class="player-controls">
+  <!-- Gros bouton Play -->
+  <button id="bigPlayBtn" aria-label="Lire ou mettre en pause le livre audio">▶</button>
+
+  <!-- Bloc vitesse -->
+  <div id="speedControl">
+    <div class="speed-label">Vitesse</div>
+    <div class="speed-knob-wrapper">
+      <input type="range" id="speedKnob" min="0.9" max="1.1" step="0.05" value="1" orient="vertical">
+
+      <!-- Colonne repères alignés -->
+      <div id="speedLabels">
+        <span>++</span>
+        <span>+</span>
+        <span>=</span>
+        <span>-</span>
+        <span>--</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Lecteur audio -->
+  <audio id="audioPlayer" controls></audio>
+
+  <!-- Playlist -->
+  <ul id="playlist">
+    <li><a href="Introduction.mp3" style="font-weight: bold;">INTRODUCTION - L'ASCENSION DE LA NBA</a></li>
+
+    <li style="font-weight: bold;">Chapitre 1 - LES DÉBUTS DE LA NBA : DE LA BAA À LA NBA</li>
+    <ul>
+      <li><a href="Chapitre1-1.mp3">1.1 - La création de la BAA et ses premiers pas</a></li>
+      <li><a href="Chapitre1-2.mp3">1.2 - La fusion avec la NBL et la naissance de la NBA</a></li>
+      <li><a href="Chapitre1-3.mp3">1.3 - Les premières stars et l'expansion de la ligue</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 2 - L'ÂGE D'OR DES ANNÉES 1980 : MAGIC, BIRD ET LA RIVALITÉ</li>
+    <ul>
+      <li><a href="Chapitre2-1.mp3">2.1 - L'émergence de Magic Johnson et Larry Bird</a></li>
+      <li><a href="Chapitre2-2.mp3">2.2 - Le rôle des franchises des Lakers et des Celtics</a></li>
+      <li><a href="Chapitre2-3.mp3">2.3 - L'impact médiatique et commercial de cette époque</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 3 - L'ASCENSION DE MICHAEL JORDAN ET DE LA CULTURE DES STARS</li>
+    <ul>
+      <li><a href="Chapitre3-1.mp3">3.1 - Les débuts de Michael Jordan et son impact immédiat</a></li>
+      <li><a href="Chapitre3-2.mp3">3.2 - Les Chicago Bulls et leur domination dans les années 1990</a></li>
+      <li><a href="Chapitre3-3.mp3">3.3 - L'influence de Jordan au-delà du terrain</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 4 - LA DREAM TEAM DE 1992 : UN TOURNANT MONDIAL</li>
+    <ul>
+      <li><a href="Chapitre4-1.mp3">4.1 - La formation de la Dream Team</a></li>
+      <li><a href="Chapitre4-2.mp3">4.2 - Le tournoi olympique et ses moments mémorables</a></li>
+      <li><a href="Chapitre4-3.mp3">4.3 - L'impact mondial de la Dream Team</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 5 - L'INTERNATIONALISATION DE LA NBA : JOUEURS ET FANS DU MONDE ENTIER</li>
+    <ul>
+      <li><a href="Chapitre5-1.mp3">5.1 - L'arrivée des premiers joueurs internationaux</a></li>
+      <li><a href="Chapitre5-2.mp3">5.2 - L'expansion des fans à l'échelle mondiale</a></li>
+      <li><a href="Chapitre5-3.mp3">5.3 - Les stars internationales et leur impact</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 6 - LES INNOVATIONS EN MARKETING ET LA CULTURE POPULAIRE</li>
+    <ul>
+      <li><a href="Chapitre6-1.mp3">6.1 - Les campagnes publicitaires emblématiques</a></li>
+      <li><a href="Chapitre6-2.mp3">6.2 - L'influence de la NBA sur la mode et la musique</a></li>
+      <li><a href="Chapitre6-3.mp3">6.3 - Le rôle des réseaux sociaux dans la promotion de la ligue</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 7 - L'ENGAGEMENT SOCIAL DE LA NBA : AU-DELÀ DU SPORT</li>
+    <ul>
+      <li><a href="Chapitre7-1.mp3">7.1 - Les initiatives communautaires de la NBA</a></li>
+      <li><a href="Chapitre7-2.mp3">7.2 - Le rôle des joueurs dans les causes sociales</a></li>
+      <li><a href="Chapitre7-3.mp3">7.3 - L'impact mondial des programmes sociaux de la NBA</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 8 - FIGURES LÉGENDAIRES ET MOMENTS MARQUANTS</li>
+    <ul>
+      <li><a href="Chapitre8-1.mp3">8.1 - Les records historiques de la NBA</a></li>
+      <li><a href="Chapitre8-2.mp3">8.2 - Les matchs les plus mémorables</a></li>
+      <li><a href="Chapitre8-3.mp3">8.3 - Les joueurs qui ont changé le jeu</a></li>
+    </ul>
+
+    <li><a href="Conclusion.mp3" style="font-weight: bold;">CONCLUSION - L'HÉRITAGE ET L'AVENIR DE LA NBA</a></li>
+  </ul>
+
+  <p><a href="ID-0-47-Annexes.pdf" target="_blank">📄 Consulter les annexes du livre</a></p>
+  <p><a href="mentions_legales.pdf">Mentions légales</a></p>
+
+  <script src="plyr.polyfilled.js"></script>
+  <script src="lecteur.js"></script>
+</body>
+</html>
